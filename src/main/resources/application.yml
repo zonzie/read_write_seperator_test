@@ -1,0 +1,21 @@
+#配置数据源
+spring:
+  datasource:
+    readsize: 2
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://192.168.198.128:3306/permissionTest?characterEncoding=UTF-8
+    username: root
+    password: 1234
+  read1:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://192.168.198.128:3306/e3mall?characterEncoding=UTF-8
+    username: root
+    password: 1234
+  read2:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://192.168.198.128:3306/test?characterEncoding=UTF-8
+    username: root
+    password: 1234
